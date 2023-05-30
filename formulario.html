@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Bootstrap - Formulário</title>
+        
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px; ">
+    <div class="dropdown sticky-top ">
+        <button class="btn btn-primary dropdown-toggle " data-toggle="dropdown" type="button" >Listas</button>
+        <div class="dropdown-menu  ">
+            <a href="index.html" class="dropdown-item">Index</a>
+            <a href="alinhamento-texto.html" class="dropdown-item">alinhamento-texto</a>
+            <a href="elementos-flutuantes.html" class="dropdown-item">Elementos-flutuantes</a>
+            <a href="cores-backgrounds.html" class="dropdown-item">cores-backgrounds</a>
+            <a href="margin-padding.html" class="dropdown-item">margin-padding</a>
+            <a href="tamanhos-bordas.html" class="dropdown-item">tamanhos-bordas</a>
+            <a href="breackpoints.html" class="dropdown-item">breackpoints</a>
+            <a href="botoes.html" class="dropdown-item">botoes</a>
+            <a href="navbar.html" class="dropdown-item">navbar</a>
+            <a href="listas.html" class="dropdown-item">Listas</a>
+            <a href="formulario.html" class="dropdown-item">Formulário</a>
+            <a href="inputGroup.html" class="dropdown-item">Input group</a>
+            <a href="alertasProgresso.html" class="dropdown-item">Alertas & Progresso</a> 
+            
+        </div>
+    </div>
+
+    <div style="background-color: aquamarine; width: 400px; margin: auto; border: 1px solid black; border-radius: 20px; padding: 10px; margin:40px auto;">
+
+        <h3 class="text-center">Readme</h3>
+        <p class="font-italic">
+           classes de Tamanhos e Bordas :  
+        </p>
+
+        <ul class="list-unstyled text-center">
+            <li><strong>.form-goup :</strong> informa grupo de form em div dentro de form</li>
+            <li><strong>.form-control :</strong> adiciona padrao bootstrap de form</li>
+            <li><strong>.form-control-(+tamanho) :</strong> adiciona tamanho </li>
+            <li><strong>.form-control-file :</strong> padrão para arquivo</li>
+            <li><strong>.form-control-input :</strong> padrão para input</li>
+            <li><strong>.custom-file :</strong> opção de customização</li>
+            <li><strong>.custom-file-label :</strong> opção de customização</li>
+            <li><strong>.custom-file-label :</strong> opção de customização</li>
+            <li><strong>.custom-range :</strong> opção de customização</li>
+            <li><strong>.is-valid :</strong> marca a caixa com verde, valido</li>
+            <li><strong>.is-invalid :</strong> marca a caixa com vermelho, invalido</li>
+            <li><strong>.valid/invalid-feedback :</strong> descreve feedback com cor verde ou vermelha</li>
+        </ul><br>
+ 
+    </div>
+
+    <!-- formulários 
+        classe: form-control-<opcoes>
+        opções: sm, lg
+    -->
+    <form>
+        
+        <!-- caixas de texto -->
+        <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input class="form-control form-control-sm" type="text" id="usuario" placeholder="Digite seu usuário">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control form-control-sm" type="email" id="email" placeholder="Digite seu email" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!-- select -->
+        <div class="form-group">
+            <label for="estados">Estados</label>
+            <select class="form-control form-control-sm" id="estados">
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div class="form-group"> 
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <!-- file input -->
+        <div class="form-group">
+            <label for="arquivo">Arquivo</label>
+            <input class="form-control-file" type="file" id="arquivo">
+        </div>
+
+
+        <!-- custom file input -->
+        <div class="custom-file">
+            <input class="custom-file-input" type="file" id="arquivo">
+            <label class="custom-file-label ">Selecione arquivo</label>
+        </div>
+        <br><br>
+
+        <!-- range -->
+        <div class="form-group">
+            <label id="range">Satisfação</label>
+            <input class="custom-range" type="range" id="range" min="1" max="10">
+        </div>
+
+        <!-- button -->
+        <input class="btn btn-primary " type="submit" value="Salvar">
+
+    </form>
+    <br><br>
+
+    <!-- Formulário inline -->
+    <form class="form-inline">
+        <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
+        <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+        <input class="form-control btn btn-primary" type="submit" value="Logar">
+    </form>
+    <br><br>
+
+    <!-- 
+    Validação de formulário 
+    Classes: is-valid, is-invalid, invalid-feedback
+    -->
+    <form>
+        
+        <div class="form-group">
+            <label for="email-usuario">email</label>
+            <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
+            <div class="valid-feedback">Email válido</div>
+        </div>
+
+        <div class="form-group">
+            <label for="senha-usuario">Senha</label>
+            <input class="form-control is-invalid" type="email" id="senha-usuario" placeholder="Digite sua senha">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Logar">
+
+    </form>
+    
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

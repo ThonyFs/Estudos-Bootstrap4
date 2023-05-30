@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Bootstrap - Botõe</title>
+        
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px; ">
+    <div class="dropdown sticky-top ">
+        <button class="btn btn-primary dropdown-toggle " data-toggle="dropdown" type="button" >Botões</button>
+        <div class="dropdown-menu ">
+            <a href="index.html" class="dropdown-item">Index</a>
+            <a href="alinhamento-texto.html" class="dropdown-item">alinhamento-texto</a>
+            <a href="elementos-flutuantes.html" class="dropdown-item">Elementos-flutuantes</a>
+            <a href="cores-backgrounds.html" class="dropdown-item">cores-backgrounds</a>
+            <a href="margin-padding.html" class="dropdown-item">margin-padding</a>
+            <a href="tamanhos-bordas.html" class="dropdown-item">tamanhos-bordas</a>
+            <a href="breackpoints.html" class="dropdown-item">breackpoints</a>
+            <a href="botoes.html" class="dropdown-item">botoes</a>
+            <a href="navbar.html" class="dropdown-item">navbar</a>
+            <a href="listas.html" class="dropdown-item">Listas</a>
+            <a href="formulario.html" class="dropdown-item">Formulário</a>
+            <a href="inputGroup.html" class="dropdown-item">Input group</a> 
+            <a href="alertasProgresso.html" class="dropdown-item">Alertas & Progresso</a> 
+        </div>
+    </div>
+
+    <div style="background-color: aquamarine; width: 400px; margin: auto; border: 1px solid black; border-radius: 20px; padding: 10px; margin:40px auto;">
+
+        <h3 class="text-center">Readme</h3>
+        <p class="font-italic">
+           Class:   
+        </p>
+
+        <ul class="list-unstyled text-left">
+            <li><strong>.btn :</strong> classe padrão para utilização de botão</li>
+            <li><strong>.btn-(cor) :</strong> botoões com cores. </li>
+            <li><strong>.btn-outline-(cor) :</strong> botoões com bordas da cor especificada </li>
+            <li><strong>.btn-sm/lg :</strong> tamanhos dos botõess </li>
+            <li><strong>.btn-block :</strong> botão em bloco </li>
+            <li><strong>.btn + active ou disabled :</strong> controla o estado do botão </li>
+            <li><strong>data-toggle="button" :</strong> Propriedade que alterna entre os estados do botão </li>
+            <li><strong>.btn-group :</strong> aplicar a classe em uma div que contém os botões para agrupar </li>
+            <li><strong>.btn-group-vertical :</strong> aplicar a classe em uma div que contém os botões para agrupar na vertical </li>
+            <li><strong>.btn-toolbar :</strong> Aplicar em uma div que contem mais de um grupo de botões para agrupar formando uma toolbar</li>
+            <li><strong>.dropdown :</strong> Aplicar em uma div que contenha <strong>1 botão + div com links</strong> para criar um botão com dropdown.  </li>
+            <li><strong>.dropdown-toggle + data-toggle="dropdown" :</strong> Aplicar no botão que criará o dropdown</li>
+            <li><strong>.dropdown-menu :</strong> aplicar na div que contem os links</li>
+            <li><strong>.dropdown-item :</strong> aplicar nos links do dropdown</li>
+            <hr>
+            <p>
+                <strong>Ex, Botão Dropdown:</strong> <br>
+                <blockquote>
+                    * div class="dropdown"* <br>
+                        * button class="btn btn-info dropdown-toggle"  data-toggle="dropdown" type="button" *<br>
+                            Clique<br>
+                        * /button *<br>
+                        * div class="dropdown-menu" *<br>
+                            * a href="#" class="dropdown-item"* Link 1 */a*<br>
+                            * div class="dropdown-divider"* */div* <br>
+                            * a href="#" class="dropdown-item"* Link 2 */a*<br>
+                            * div class="dropdown-divider"* */div* <br>
+                            * a href="#" class="dropdown-item"* Link 3 */a* <br>
+                        */div*<br>
+                    */div*<br>
+                </blockquote>
+            
+            </p>
+    
+        </ul>
+        <!-- <h3>Botões dropdown</h3>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle"  data-toggle="dropdown" type="button">
+                Clique
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link 1</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Link 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Link 3</a>
+            </div>
+        </div>
+    -->
+
+    </div>
+
+     <!-- Botoes 
+        formatação padrao: btn
+        formatação específicas:
+        btn-primary, btn-secondary, btn-success, btn-info,
+        btn-warning, btn-danger, btn-light, btn-dark, btn-link
+        -->
+        <h3>Botões</h3>
+        <button class="btn btn-primary" type="button">Clique</button>
+    
+        <h3>Botões com diferentes tags</h3>
+        <a class="btn btn-dark" href="#">Link</a>
+        <button class="btn btn-success" type="submit">Submit</button>
+        <input class="btn btn-warning" type="button" value="Button">
+        <input class="btn btn-info" type="submit" value="Input Submit">
+        <input class="btn btn-light" type="reset" value="Reset">
+    
+        <!-- Botoes com contorno
+        btn-outline-<formato>
+        -->
+        <h3>Botões com contorno</h3>
+        <button class="btn btn-outline-danger" type="button">Clique</button>
+    
+        <!-- Tamanhos de botões
+        opções: btn-lg, btn-sm, btn-block
+        -->
+        <h3>Tamanhos dos botões</h3>
+        <button class="btn btn-lg btn-outline-info" type="button">Grande</button>
+        <button class="btn  btn-outline-info" type="button">Normal</button>
+        <button class="btn btn-sm btn-outline-info " type="button">Pequeno</button>
+        <br><br>
+        <button class="btn  btn-primary btn-block" type="button">Bloco</button>
+    
+        <!-- Estados dos botões
+        opções: active, disabled
+        -->
+        <h3>Estados de botões</h3>
+        <button class="btn btn-success " type="button">Normal</button>
+        <button class="btn btn-success active" type="button">Ativo</button>
+        <button class="btn btn-success disabled" type="button">Inativo</button>
+        <br><br>
+        <button class="btn btn-success " type="button" data-toggle="button">Alternar</button>
+    
+        <h3>Grupos de botões - horizontal</h3>
+        <div class="btn-group">
+            <button class="btn btn-info " type="button">Esquerda</button>
+            <button class="btn btn-info " type="button">Centro</button>
+            <button class="btn btn-info " type="button">Direita</button>
+        </div>
+    
+        <h3>Grupos de botões - vertical</h3>
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary" type="button">Topo</button>
+            <button class="btn btn-primary" type="button">Meio</button>
+            <button class="btn btn-primary" type="button">Fundo</button>
+        </div>
+    
+        <h3>Toolbar de botões</h3>
+        <div class="btn-toolbar">
+            <div class="btn-group">
+               <button class="btn btn-warning" type="button">1</button>
+               <button class="btn btn-warning" type="button">2</button>
+               <button class="btn btn-warning" type="button">3</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-warning" type="button">4</button>
+                <button class="btn btn-warning" type="button">5</button>
+            </div>
+        </div>
+    
+        <h3>Botões dropdown</h3>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle"  data-toggle="dropdown" type="button">
+                Clique
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link 1</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Link 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Link 3</a>
+            </div>
+        </div>
+    
+   
+    
+    
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Bootstrap - Navbar</title>
+        
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px; ">
+    <div class="dropdown sticky-top ">
+        <button class="btn btn-primary dropdown-toggle " data-toggle="dropdown" type="button" >Navbar</button>
+        <div class="dropdown-menu  ">
+            <a href="index.html" class="dropdown-item">Index</a>
+            <a href="alinhamento-texto.html" class="dropdown-item">alinhamento-texto</a>
+            <a href="elementos-flutuantes.html" class="dropdown-item">Elementos-flutuantes</a>
+            <a href="cores-backgrounds.html" class="dropdown-item">cores-backgrounds</a>
+            <a href="margin-padding.html" class="dropdown-item">margin-padding</a>
+            <a href="tamanhos-bordas.html" class="dropdown-item">tamanhos-bordas</a>
+            <a href="breackpoints.html" class="dropdown-item">breackpoints</a>
+            <a href="botoes.html" class="dropdown-item">botoes</a>
+            <a href="navbar.html" class="dropdown-item">navbar</a>
+            <a href="listas.html" class="dropdown-item">Listas</a>
+            <a href="formulario.html" class="dropdown-item">Formulário</a>
+            <a href="inputGroup.html" class="dropdown-item">Input group</a> 
+            <a href="alertasProgresso.html" class="dropdown-item">Alertas & Progresso</a> 
+        </div>
+    </div>
+
+
+
+    <div style="background-color: aquamarine; width: 400px; margin: auto; border: 1px solid black; border-radius: 20px; padding: 10px; margin:40px auto;">
+
+        <h3 class="text-center">Readme</h3>
+        <p class="font-italic">
+           Class:   
+        </p>
+
+        <ul class="list-unstyled text-left">
+            <li><strong>.nav :</strong> Cria o espaço da navegação. EX: ul class="nav" ...</li>
+            <li><strong>.nav-item :</strong> Informa um item da navegação. EX: li class="nav-item" ...</li>
+            <li><strong>.nav-link :</strong> Informa um link da navegação. EX: li class="nav-item" ...</li>
+            <li><strong>.nav-tabs :</strong>Opção de formato de navegação</li>
+            <li><strong>.nav-tabs :</strong> Opção de formato de navegação</li>
+            <li><strong>.justify-content-center :</strong> Alinhamento a esquerda</li>
+            <li><strong>.justify-content-end :</strong> Alinhamento a direita</li>
+            <li><strong>.flex-column :</strong> Alinhamento empilhado</li>
+            <li><strong>.navbar :</strong> Cria o espaço da barra de navegação</li>
+            <li><strong>.navbar-expand-sm :</strong> responsável por aplicar a responsividade na barra.</li>
+            <li><strong>.navbar-(cores) :</strong> padrões de cores da barra podendo unir com background <strong>.bg-dark</strong></li>
+            <li><strong>.navbar-brand :</strong> Informa o logo da navegação</strong></li>
+            <li><strong>.navbar-nav :</strong> informa o espaço da navegação da navbar </strong></li>
+            <li><strong>.navbar-toggler-icon :</strong> Cria icone hamburguer </li>
+            <li><strong>.navbar-toggler:</strong> </li>
+            <li><strong>.navbar-collapse:</strong> </li>
+            <li><strong>.collapse:</strong> forma de exibição, ele espande a caixa para mostrar os itens</li>
+            <li><strong>.dropdown:</strong> forma de exibição, ele abre uma caixa para mostrar os</li>
+            <li><strong>.dropdown-menu:</strong> </li>
+            <li><strong>.dropdown-toggle:</strong> responsavel pela resposta da ação no clck</li>
+            <li><strong>.dropdown-item:</strong> para itens dentro do menu dropdown</li>
+            <li><strong>data-toggler=" " :</strong> Informa o formato da exibição ao click</li>
+            <li><strong>data-target=" " :</strong> indica o id que efetuará a ação</li>
+        </ul>
+       
+        
+
+    </div>
+
+      <!-- Navegação
+    Tipos de navegação:
+        nav-pills
+        nav-tabs
+    opções de alinhamento: 
+        justify-content-center 
+        justify-content-end
+        flex-column
+    -->
+    <h2>Navegação simples / abas</h2>
+    <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Contato</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link ">Serviço</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Link</a>
+        </li>
+    </ul>
+    
+
+    <h2 class="mb-3">Barra de navegação simples</h2>
+    
+    <nav class="my-4 navbar navbar-expand-sm navbar-dark bg-dark ">
+        <a href="#" class="navbar-brand">Chalé Hotel</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Serviço</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <h2>Barra de navegação com menu responsivo</h2>
+     
+    <nav class="my-4 navbar navbar-expand-sm navbar-dark bg-dark ">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">Chalé Hotel</a>
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse"  id="nav-target">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Serviço</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h2>Barra de navegação com formulário</h2>
+
+    <nav class="my-4 navbar navbar-expand-md navbar-dark bg-dark ">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">Chalé Hotel</a>
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse"  id="nav-target3">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Serviço</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <!-- Formulario  -->
+            <form class="form-inline">
+            <input type="text" class="form-control" placeholder="pesquisar">
+            <button class="btn btn-outline-success">ok</button>
+        </form>
+        </div>
+
+        
+       
+    </nav>
+    
+
+    
+    <h2>Barra de navegação com menu dropdown</h2>
+    
+    <nav class="my-4 navbar navbar-expand-md navbar-dark bg-dark ">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">Chalé Hotel</a>
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse"  id="nav-target2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviço</a>
+                    <div class="dropdown-menu ">
+                        <a class="dropdown-item" href="#">Serviço 1</a>
+                        <a class="dropdown-item" href="#">Serviço 2</a>
+                        <a class="dropdown-item" href="#">Serviço 3</a>
+                    </div>
+
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+          
+        </div>
+
+        
+       
+    </nav>
+    
+    <!--Cores
+    opções: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+    -->
+    <h2>Cores</h2>
+
+    <nav class="my-4 navbar navbar-expand-sm navbar-success bg-light">
+        <a href="#" class="navbar-brand">Chalé Hotel</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Serviço</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <!--Alinhamentos
+    opções: fixed-top, fixed-bottom, sticky
+    -->
+    <h2>Alinhamentos</h2>
+    
+    <nav class="my-4  navbar navbar-expand-sm navbar-dark bg-primary">
+        <a href="#" class="navbar-brand">Chalé Hotel</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Serviço</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <h1>classes de alinhamento: </h1>
+    <p>opções: <br> <strong>fixed-top <br> fixed-bottom <br> sticky</strong></p>
+   
+    
+    
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
